@@ -94,8 +94,6 @@ if not filtered_data.empty:
     chart_title = f"Resale Price Trend of {filtered_data['full_address'].iloc[0]} for {selected_flat_type}"
 else:
     chart_title = "Resale Price Trend"
-else:
-    chart_title = "Resale Price Trend"
 
 # Plotting
 st.header("HDB Resale Price Trends", anchor=None)
