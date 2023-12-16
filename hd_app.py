@@ -91,8 +91,9 @@ filtered_data['full_address'] = filtered_data['full_address'].str.replace(
 
 # Dynamic Chart Title
 if not filtered_data.empty:
-    chart_title = f"Resale Price Trend of {
-        filtered_data['full_address'].iloc[0]} for {'/'.join(selected_flat_types)}"
+    chart_title = f"Resale Price Trend of {filtered_data['full_address'].iloc[0]} for {selected_flat_type}"
+else:
+    chart_title = "Resale Price Trend"
 else:
     chart_title = "Resale Price Trend"
 
